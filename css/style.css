@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Prompt&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: #BDD2B6;
+    width: auto;
+}
+
+.cabecalho {
+    display: flex;
+    padding: 2% 0% 2% 6%;
+    background-color: #AA5656;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+
+.cabecalho__menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    font-size: 1.5rem;
+}
+
+.cabecalho__menu li a {
+    color: #FEFEFE;
+}
+
+.cabecalho__menu li a:hover{
+    background-color: #BFCBA8;
+    padding: 1%;
+}
+
+#conteudo {
+    padding: 3%;
+}
+
+#conteudo__principal {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.conteudo__titulo__principal {
+    width: 50%;
+    font-size: 2.5rem;
+    align-self: center;
+    text-align: center;
+    color: #AA5656;
+    font-family: 'Prompt', sans-serif;
+}
+
+.conteudo__principal__imagem {
+    width: 30%;
+}
+
+#conteudo__carta {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3%;
+    gap: 15px;
+}
+
+.conteudo__titulo {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #AA5656;
+    font-family: 'Prompt', sans-serif;
+}
+
+.conteudo__carta__texto {
+    text-align: justify;
+    font-size: 1.25rem;
+    line-height: 25px;
+    color: #000000;
+    font-family: 'Lato', sans-serif;
+}
+
+#conteudo__fotos {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.conteudo__fotos__imagens {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fotos {
+    width: 30%;
+    margin: 1.5% 0% 0% 0%;
+}
+
+.rodape {
+    padding: 3%;
+    background-color: #AA5656;
+    color: #FEFEFE;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+.rodape span {
+    display: block;
+    margin: 0% 0% 1% 0%;
+}
+
+@media (max-width: 1200px) {
+    #conteudo__principal {
+        flex-direction: column;
+    }
+    
+    .conteudo__titulo__principal {
+        font-size: 1.8rem;
+    }
+
+    .conteudo__titulo {
+        font-size: 1.8rem;
+    }
+
+    .conteudo__principal__imagem {
+        width: 40%;
+        justify-content: center;
+        padding: 2% 30%;
+    }
+
+    .conteudo__fotos__imagens {
+        flex-wrap: wrap-reverse;
+        flex-direction: column;
+    }
+
+    .fotos {
+        width: 60%;
+        margin: 2% 0% 0% 0%;
+    }
+}
+
+@media (max-width: 550px) {
+    .cabecalho {
+        padding: 4.5%;
+    }
+}
